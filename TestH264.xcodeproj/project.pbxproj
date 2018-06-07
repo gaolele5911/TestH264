@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBF30E6820C9247400FDA086 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E6720C9247400FDA086 /* AppDelegate.m */; };
+		FBF30E6B20C9247400FDA086 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E6A20C9247400FDA086 /* ViewController.m */; };
+		FBF30E6E20C9247400FDA086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF30E6C20C9247400FDA086 /* Main.storyboard */; };
+		FBF30E7020C9247400FDA086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF30E6F20C9247400FDA086 /* Assets.xcassets */; };
+		FBF30E7320C9247400FDA086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF30E7120C9247400FDA086 /* LaunchScreen.storyboard */; };
+		FBF30E7620C9247400FDA086 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E7520C9247400FDA086 /* main.m */; };
+		FBF30E8020C9247500FDA086 /* TestH264Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E7F20C9247500FDA086 /* TestH264Tests.m */; };
+		FBF30E8B20C9247500FDA086 /* TestH264UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E8A20C9247500FDA086 /* TestH264UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBF30E7C20C9247500FDA086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF30E5B20C9247400FDA086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF30E6220C9247400FDA086;
+			remoteInfo = TestH264;
+		};
+		FBF30E8720C9247500FDA086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF30E5B20C9247400FDA086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF30E6220C9247400FDA086;
+			remoteInfo = TestH264;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBF30E6320C9247400FDA086 /* TestH264.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestH264.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF30E6620C9247400FDA086 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBF30E6720C9247400FDA086 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBF30E6920C9247400FDA086 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBF30E6A20C9247400FDA086 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBF30E6D20C9247400FDA086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBF30E6F20C9247400FDA086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF30E7220C9247400FDA086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBF30E7420C9247400FDA086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF30E7520C9247400FDA086 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBF30E7B20C9247500FDA086 /* TestH264Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestH264Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF30E7F20C9247500FDA086 /* TestH264Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestH264Tests.m; sourceTree = "<group>"; };
+		FBF30E8120C9247500FDA086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF30E8620C9247500FDA086 /* TestH264UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestH264UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF30E8A20C9247500FDA086 /* TestH264UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestH264UITests.m; sourceTree = "<group>"; };
+		FBF30E8C20C9247500FDA086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF30E6020C9247400FDA086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF30E7820C9247500FDA086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF30E8320C9247500FDA086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBF30E5A20C9247400FDA086 = {
+			isa = PBXGroup;
+			children = (
+				FBF30E6520C9247400FDA086 /* TestH264 */,
+				FBF30E7E20C9247500FDA086 /* TestH264Tests */,
+				FBF30E8920C9247500FDA086 /* TestH264UITests */,
+				FBF30E6420C9247400FDA086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF30E6420C9247400FDA086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF30E6320C9247400FDA086 /* TestH264.app */,
+				FBF30E7B20C9247500FDA086 /* TestH264Tests.xctest */,
+				FBF30E8620C9247500FDA086 /* TestH264UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF30E6520C9247400FDA086 /* TestH264 */ = {
+			isa = PBXGroup;
+			children = (
+				FBF30E6620C9247400FDA086 /* AppDelegate.h */,
+				FBF30E6720C9247400FDA086 /* AppDelegate.m */,
+				FBF30E6920C9247400FDA086 /* ViewController.h */,
+				FBF30E6A20C9247400FDA086 /* ViewController.m */,
+				FBF30E6C20C9247400FDA086 /* Main.storyboard */,
+				FBF30E6F20C9247400FDA086 /* Assets.xcassets */,
+				FBF30E7120C9247400FDA086 /* LaunchScreen.storyboard */,
+				FBF30E7420C9247400FDA086 /* Info.plist */,
+				FBF30E7520C9247400FDA086 /* main.m */,
+			);
+			path = TestH264;
+			sourceTree = "<group>";
+		};
+		FBF30E7E20C9247500FDA086 /* TestH264Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF30E7F20C9247500FDA086 /* TestH264Tests.m */,
+				FBF30E8120C9247500FDA086 /* Info.plist */,
+			);
+			path = TestH264Tests;
+			sourceTree = "<group>";
+		};
+		FBF30E8920C9247500FDA086 /* TestH264UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF30E8A20C9247500FDA086 /* TestH264UITests.m */,
+				FBF30E8C20C9247500FDA086 /* Info.plist */,
+			);
+			path = TestH264UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF30E6220C9247400FDA086 /* TestH264 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF30E8F20C9247500FDA086 /* Build configuration list for PBXNativeTarget "TestH264" */;
+			buildPhases = (
+				FBF30E5F20C9247400FDA086 /* Sources */,
+				FBF30E6020C9247400FDA086 /* Frameworks */,
+				FBF30E6120C9247400FDA086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestH264;
+			productName = TestH264;
+			productReference = FBF30E6320C9247400FDA086 /* TestH264.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF30E7A20C9247500FDA086 /* TestH264Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF30E9220C9247500FDA086 /* Build configuration list for PBXNativeTarget "TestH264Tests" */;
+			buildPhases = (
+				FBF30E7720C9247500FDA086 /* Sources */,
+				FBF30E7820C9247500FDA086 /* Frameworks */,
+				FBF30E7920C9247500FDA086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF30E7D20C9247500FDA086 /* PBXTargetDependency */,
+			);
+			name = TestH264Tests;
+			productName = TestH264Tests;
+			productReference = FBF30E7B20C9247500FDA086 /* TestH264Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBF30E8520C9247500FDA086 /* TestH264UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF30E9520C9247500FDA086 /* Build configuration list for PBXNativeTarget "TestH264UITests" */;
+			buildPhases = (
+				FBF30E8220C9247500FDA086 /* Sources */,
+				FBF30E8320C9247500FDA086 /* Frameworks */,
+				FBF30E8420C9247500FDA086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF30E8820C9247500FDA086 /* PBXTargetDependency */,
+			);
+			name = TestH264UITests;
+			productName = TestH264UITests;
+			productReference = FBF30E8620C9247500FDA086 /* TestH264UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF30E5B20C9247400FDA086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = gaol;
+				TargetAttributes = {
+					FBF30E6220C9247400FDA086 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FBF30E7A20C9247500FDA086 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FBF30E6220C9247400FDA086;
+					};
+					FBF30E8520C9247500FDA086 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FBF30E6220C9247400FDA086;
+					};
+				};
+			};
+			buildConfigurationList = FBF30E5E20C9247400FDA086 /* Build configuration list for PBXProject "TestH264" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBF30E5A20C9247400FDA086;
+			productRefGroup = FBF30E6420C9247400FDA086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF30E6220C9247400FDA086 /* TestH264 */,
+				FBF30E7A20C9247500FDA086 /* TestH264Tests */,
+				FBF30E8520C9247500FDA086 /* TestH264UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF30E6120C9247400FDA086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF30E7320C9247400FDA086 /* LaunchScreen.storyboard in Resources */,
+				FBF30E7020C9247400FDA086 /* Assets.xcassets in Resources */,
+				FBF30E6E20C9247400FDA086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF30E7920C9247500FDA086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF30E8420C9247500FDA086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF30E5F20C9247400FDA086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF30E6B20C9247400FDA086 /* ViewController.m in Sources */,
+				FBF30E7620C9247400FDA086 /* main.m in Sources */,
+				FBF30E6820C9247400FDA086 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF30E7720C9247500FDA086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF30E8020C9247500FDA086 /* TestH264Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF30E8220C9247500FDA086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF30E8B20C9247500FDA086 /* TestH264UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBF30E7D20C9247500FDA086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF30E6220C9247400FDA086 /* TestH264 */;
+			targetProxy = FBF30E7C20C9247500FDA086 /* PBXContainerItemProxy */;
+		};
+		FBF30E8820C9247500FDA086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF30E6220C9247400FDA086 /* TestH264 */;
+			targetProxy = FBF30E8720C9247500FDA086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBF30E6C20C9247400FDA086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF30E6D20C9247400FDA086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBF30E7120C9247400FDA086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF30E7220C9247400FDA086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF30E8D20C9247500FDA086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBF30E8E20C9247500FDA086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF30E9020C9247500FDA086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK26ZWGWUT;
+				INFOPLIST_FILE = TestH264/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navinfo.weDriveLauncher.TestH264;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBF30E9120C9247500FDA086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK26ZWGWUT;
+				INFOPLIST_FILE = TestH264/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navinfo.weDriveLauncher.TestH264;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBF30E9320C9247500FDA086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK26ZWGWUT;
+				INFOPLIST_FILE = TestH264Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navinfo.weDriveLauncher.TestH264Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestH264.app/TestH264";
+			};
+			name = Debug;
+		};
+		FBF30E9420C9247500FDA086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK26ZWGWUT;
+				INFOPLIST_FILE = TestH264Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navinfo.weDriveLauncher.TestH264Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestH264.app/TestH264";
+			};
+			name = Release;
+		};
+		FBF30E9620C9247500FDA086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK26ZWGWUT;
+				INFOPLIST_FILE = TestH264UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navinfo.weDriveLauncher.TestH264UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestH264;
+			};
+			name = Debug;
+		};
+		FBF30E9720C9247500FDA086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AK26ZWGWUT;
+				INFOPLIST_FILE = TestH264UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.navinfo.weDriveLauncher.TestH264UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestH264;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF30E5E20C9247400FDA086 /* Build configuration list for PBXProject "TestH264" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF30E8D20C9247500FDA086 /* Debug */,
+				FBF30E8E20C9247500FDA086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF30E8F20C9247500FDA086 /* Build configuration list for PBXNativeTarget "TestH264" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF30E9020C9247500FDA086 /* Debug */,
+				FBF30E9120C9247500FDA086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF30E9220C9247500FDA086 /* Build configuration list for PBXNativeTarget "TestH264Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF30E9320C9247500FDA086 /* Debug */,
+				FBF30E9420C9247500FDA086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF30E9520C9247500FDA086 /* Build configuration list for PBXNativeTarget "TestH264UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF30E9620C9247500FDA086 /* Debug */,
+				FBF30E9720C9247500FDA086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF30E5B20C9247400FDA086 /* Project object */;
+}
