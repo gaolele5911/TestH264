@@ -15,6 +15,7 @@
 		FBF30E7620C9247400FDA086 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E7520C9247400FDA086 /* main.m */; };
 		FBF30E8020C9247500FDA086 /* TestH264Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E7F20C9247500FDA086 /* TestH264Tests.m */; };
 		FBF30E8B20C9247500FDA086 /* TestH264UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E8A20C9247500FDA086 /* TestH264UITests.m */; };
+		FBF30E9920C9277300FDA086 /* image in Resources */ = {isa = PBXBuildFile; fileRef = FBF30E9820C9277300FDA086 /* image */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FBF30E8620C9247500FDA086 /* TestH264UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestH264UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF30E8A20C9247500FDA086 /* TestH264UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestH264UITests.m; sourceTree = "<group>"; };
 		FBF30E8C20C9247500FDA086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF30E9820C9277300FDA086 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		FBF30E6520C9247400FDA086 /* TestH264 */ = {
 			isa = PBXGroup;
 			children = (
+				FBF30E9820C9277300FDA086 /* image */,
 				FBF30E6620C9247400FDA086 /* AppDelegate.h */,
 				FBF30E6720C9247400FDA086 /* AppDelegate.m */,
 				FBF30E6920C9247400FDA086 /* ViewController.h */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF30E9920C9277300FDA086 /* image in Resources */,
 				FBF30E7320C9247400FDA086 /* LaunchScreen.storyboard in Resources */,
 				FBF30E7020C9247400FDA086 /* Assets.xcassets in Resources */,
 				FBF30E6E20C9247400FDA086 /* Main.storyboard in Resources */,
