@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSTimer *timer1;
 @property (weak, nonatomic) IBOutlet UIImageView *gitImage;
 @property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UIButton *startRecordScreen;
 @end
 
 @implementation ViewController
@@ -34,8 +35,11 @@
         [runloop addTimer:_timer1 forMode:NSRunLoopCommonModes];
     }
 
-    
     [self animationImageView:_gitImage];
+    
+    _startRecordScreen.tag = 0;
+    [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];
+    [_startRecordScreen sizeToFit];
 }
 
 //时钟模块
@@ -86,6 +90,21 @@
             [self.timer1 invalidate];
             _timer1=nil;
         }
+    }
+}
+- (IBAction)isStartRecordScreen:(id)sender {
+    
+    if (_startRecordScreen.tag == 0) {
+        
+        _startRecordScreen.tag =1;
+        [_startRecordScreen setTitle:@"Stop Record Screen" forState:UIControlStateNormal];
+        [_startRecordScreen sizeToFit];
+    }
+    else {
+        
+        _startRecordScreen.tag =0;
+        [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];
+        [_startRecordScreen sizeToFit];
     }
 }
 
