@@ -15,7 +15,7 @@
 		FBF30E7620C9247400FDA086 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E7520C9247400FDA086 /* main.m */; };
 		FBF30E8020C9247500FDA086 /* TestH264Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E7F20C9247500FDA086 /* TestH264Tests.m */; };
 		FBF30E8B20C9247500FDA086 /* TestH264UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E8A20C9247500FDA086 /* TestH264UITests.m */; };
-		FBF30EA820CA1CD300FDA086 /* testH264.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30EA720CA1CD300FDA086 /* testH264.m */; };
+		FBF30EA820CA1CD300FDA086 /* testH264.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBF30EA720CA1CD300FDA086 /* testH264.mm */; };
 		FBF30EB320CA20E400FDA086 /* libWLH264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF30EB220CA20E400FDA086 /* libWLH264.a */; };
 		FBF30EBF20CA249A00FDA086 /* abc1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF30EB520CA249A00FDA086 /* abc1.jpg */; };
 		FBF30EC020CA249A00FDA086 /* abc10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF30EB620CA249A00FDA086 /* abc10.jpg */; };
@@ -27,6 +27,7 @@
 		FBF30EC620CA249A00FDA086 /* abc7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF30EBC20CA249A00FDA086 /* abc7.jpg */; };
 		FBF30EC720CA249A00FDA086 /* abc8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF30EBD20CA249A00FDA086 /* abc8.jpg */; };
 		FBF30EC820CA249A00FDA086 /* abc9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF30EBE20CA249A00FDA086 /* abc9.jpg */; };
+		FBF30ECB20CA4C0600FDA086 /* h264DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30ECA20CA4C0600FDA086 /* h264DataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +65,7 @@
 		FBF30E8A20C9247500FDA086 /* TestH264UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestH264UITests.m; sourceTree = "<group>"; };
 		FBF30E8C20C9247500FDA086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF30EA620CA1CD300FDA086 /* testH264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testH264.h; sourceTree = "<group>"; };
-		FBF30EA720CA1CD300FDA086 /* testH264.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testH264.m; sourceTree = "<group>"; };
+		FBF30EA720CA1CD300FDA086 /* testH264.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testH264.mm; sourceTree = "<group>"; };
 		FBF30EB020CA20E400FDA086 /* WLH264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLH264.h; sourceTree = "<group>"; };
 		FBF30EB120CA20E400FDA086 /* WLScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLScreenController.h; sourceTree = "<group>"; };
 		FBF30EB220CA20E400FDA086 /* libWLH264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWLH264.a; sourceTree = "<group>"; };
@@ -78,6 +79,8 @@
 		FBF30EBC20CA249A00FDA086 /* abc7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abc7.jpg; sourceTree = "<group>"; };
 		FBF30EBD20CA249A00FDA086 /* abc8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abc8.jpg; sourceTree = "<group>"; };
 		FBF30EBE20CA249A00FDA086 /* abc9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abc9.jpg; sourceTree = "<group>"; };
+		FBF30EC920CA4C0600FDA086 /* h264DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = h264DataSource.h; path = TestH264/h264DataSource.h; sourceTree = SOURCE_ROOT; };
+		FBF30ECA20CA4C0600FDA086 /* h264DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = h264DataSource.m; path = TestH264/h264DataSource.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +144,9 @@
 				FBF30E7420C9247400FDA086 /* Info.plist */,
 				FBF30E7520C9247400FDA086 /* main.m */,
 				FBF30EA620CA1CD300FDA086 /* testH264.h */,
-				FBF30EA720CA1CD300FDA086 /* testH264.m */,
+				FBF30EA720CA1CD300FDA086 /* testH264.mm */,
+				FBF30EC920CA4C0600FDA086 /* h264DataSource.h */,
+				FBF30ECA20CA4C0600FDA086 /* h264DataSource.m */,
 			);
 			path = TestH264;
 			sourceTree = "<group>";
@@ -351,8 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF30E6B20C9247400FDA086 /* ViewController.m in Sources */,
-				FBF30EA820CA1CD300FDA086 /* testH264.m in Sources */,
+				FBF30EA820CA1CD300FDA086 /* testH264.mm in Sources */,
 				FBF30E7620C9247400FDA086 /* main.m in Sources */,
+				FBF30ECB20CA4C0600FDA086 /* h264DataSource.m in Sources */,
 				FBF30E6820C9247400FDA086 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

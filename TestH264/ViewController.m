@@ -8,12 +8,15 @@
 
 
 #import "ViewController.h"
+#import "testH264.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSTimer *timer1;
 @property (weak, nonatomic) IBOutlet UIImageView *gitImage;
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UIButton *startRecordScreen;
+
+@property (weak,nonatomic) testH264 * mTestH264;
 @end
 
 @implementation ViewController
@@ -40,6 +43,8 @@
     _startRecordScreen.tag = 0;
     [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];
     [_startRecordScreen sizeToFit];
+    
+    _mTestH264 = [testH264 sharedInstance];
 }
 
 //时钟模块
@@ -96,12 +101,13 @@
     
     if (_startRecordScreen.tag == 0) {
         
+        [_mTestH264 startRecord];
         _startRecordScreen.tag =1;
         [_startRecordScreen setTitle:@"Stop Record Screen" forState:UIControlStateNormal];
         [_startRecordScreen sizeToFit];
     }
     else {
-        
+        [_mTestH264 stopReord];
         _startRecordScreen.tag =0;
         [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];
         [_startRecordScreen sizeToFit];

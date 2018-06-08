@@ -12,4 +12,7 @@
 
 + (testH264 *)sharedInstance;
 
+-(void)startRecord;
+-(void)stopReord;
+
 @end
