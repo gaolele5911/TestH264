@@ -45,10 +45,23 @@
     [_mWLScreenController setDelegate:[h264DataSource sharedInstance]];
     [_mWLScreenController setCodecMode:CODECMODE];
     [_mWLScreenController setCaptureFPS:CAPTUREFPS];
-    [_mWLScreenController setCaptureSize:SCREENWIDTH height:SCREENHEIGHT orientation:NO];
+    [_mWLScreenController setCaptureSize:SCREENWIDTH height:SCREENHEIGHT orientation:YES];
 }
 
-
+-(void)removeFile
+{
+    NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *homePath = [paths objectAtIndex:0];
+    
+    NSString *filePath = [homePath stringByAppendingPathComponent:FILENAME];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if([fileManager fileExistsAtPath:filePath]) //如果不存在
+    {
+        [fileManager removeItemAtPath:filePath error:nil];
+    }
+}
 -(void)startRecord {
     
     [_mWLScreenController startScreen];

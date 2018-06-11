@@ -31,7 +31,6 @@
     NSLog(@"AAAA$$$$ onH264DataReceive %d\r\n",data.length);
     
     [self writefile:data];
-
 }
 
 -(void)writefile:(NSData *)data
@@ -39,7 +38,7 @@
     NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     NSString *homePath = [paths objectAtIndex:0];
     
-    NSString *filePath = [homePath stringByAppendingPathComponent:@"export229.mp4"];
+    NSString *filePath = [homePath stringByAppendingPathComponent:FILENAME];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     

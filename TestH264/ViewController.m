@@ -9,6 +9,10 @@
 
 #import "ViewController.h"
 #import "testH264.h"
+#import "h264DataSource.h"
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
 
 @interface ViewController ()
 @property (nonatomic, strong) NSTimer *timer1;
@@ -17,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *startRecordScreen;
 
 @property (weak,nonatomic) testH264 * mTestH264;
+
+@property (nonatomic, strong) BMKMapView *mapView;
+
 @end
 
 @implementation ViewController
@@ -45,6 +52,12 @@
     [_startRecordScreen sizeToFit];
     
     _mTestH264 = [testH264 sharedInstance];
+    
+    CGRect rect = {0,40,SCREENWIDTH,SCREENHEIGHT/2};
+    
+    BMKMapView* mapView = [[BMKMapView alloc]initWithFrame:rect];
+    _mapView = mapView;
+    [self.view addSubview:_mapView];
 }
 
 //时钟模块
@@ -112,6 +125,17 @@
         [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];
         [_startRecordScreen sizeToFit];
     }
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [_mapView viewWillAppear];
+    _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [_mapView viewWillDisappear];
+    _mapView.delegate = nil; // 不用时，置nil
 }
 
 @end

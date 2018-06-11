@@ -15,6 +15,7 @@
 
 #define CAPTUREFPS 30
 #define CODECMODE 2  // 影像编码模式(0x01:JPEG, 0x02:VEDIO, 0x03:JPEG&VEDIO)
+#define FILENAME @"H264Data.mp4"
 
 @interface h264DataSource : NSObject<WLH264Delegate,ScreenDelegate>
 
