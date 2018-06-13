@@ -30,15 +30,15 @@
 - (void)onH264DataReceive:(NSData *)data startTime:(double)startTime {
     NSLog(@"AAAA$$$$ onH264DataReceive %d\r\n",data.length);
     
-    [self writefile:data];
+    [self writefile:data fileName:FILENAME];
 }
 
--(void)writefile:(NSData *)data
+-(void)writefile:(NSData *)data fileName:(NSString *) name
 {
     NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     NSString *homePath = [paths objectAtIndex:0];
     
-    NSString *filePath = [homePath stringByAppendingPathComponent:FILENAME];
+    NSString *filePath = [homePath stringByAppendingPathComponent:name];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -58,16 +58,22 @@
         [fileHandle closeFile];
     }
 }
-
 //ScreenDelegate
 - (void)onDataChanged:(NSData *)data {
     NSLog(@"AAAA$$$$ onDataChanged\r\n");
     
 
 }
+static bool isFirst = true;
 - (void)onImageChanged:(UIImage *)image startTime:(double)startTime {
     NSLog(@"AAAA$$$$ onImageChanged \r\n");
     
+    if (isFirst) {
+        isFirst = false;
+        
+        [self writefile:UIImagePNGRepresentation(image) fileName:IMAGENAME];
+
+    }
     [_mWLH264 setCaptureImage:image startTime:startTime];
 
 }

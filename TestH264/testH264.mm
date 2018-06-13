@@ -48,21 +48,10 @@
     [_mWLScreenController setCaptureSize:SCREENWIDTH height:SCREENHEIGHT orientation:YES];
 }
 
--(void)removeFile
-{
-    NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-    NSString *homePath = [paths objectAtIndex:0];
-    
-    NSString *filePath = [homePath stringByAppendingPathComponent:FILENAME];
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if([fileManager fileExistsAtPath:filePath]) //如果不存在
-    {
-        [fileManager removeItemAtPath:filePath error:nil];
-    }
-}
 -(void)startRecord {
+    
+    [self removeFile:IMAGENAME];
+    [self removeFile:FILENAME];
     
     [_mWLScreenController startScreen];
     [_mWLH264 start];
@@ -71,6 +60,21 @@
 -(void)stopReord {
     [_mWLScreenController stopScreen];
     [_mWLH264 stop];
+}
+
+-(void)removeFile:(NSString *)name
+{
+    NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *homePath = [paths objectAtIndex:0];
+    
+    NSString *filePath = [homePath stringByAppendingPathComponent:name];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if([fileManager fileExistsAtPath:filePath]) //如果不存在
+    {
+        [fileManager removeItemAtPath:filePath error:nil];
+    }
 }
 
 @end
