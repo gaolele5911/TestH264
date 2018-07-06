@@ -13,6 +13,7 @@
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 #import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
 #import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+#import "CDPReplay.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSTimer *timer1;
@@ -114,12 +115,15 @@
     
     if (_startRecordScreen.tag == 0) {
         
+        [[CDPReplay sharedReplay] startRecord];
         [_mTestH264 startRecord];
         _startRecordScreen.tag =1;
         [_startRecordScreen setTitle:@"Stop Record Screen" forState:UIControlStateNormal];
         [_startRecordScreen sizeToFit];
     }
     else {
+        
+        [[CDPReplay sharedReplay] stopRecordAndShowVideoPreviewController:YES];
         [_mTestH264 stopReord];
         _startRecordScreen.tag =0;
         [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];

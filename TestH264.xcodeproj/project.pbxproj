@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96BEEB95F2A8F33FB0663E8E /* libPods-TestH264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 145C4E5E500AE536E815E189 /* libPods-TestH264.a */; };
+		FB7D855420EF65F000435BE1 /* CDPReplay.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7D855220EF65F000435BE1 /* CDPReplay.m */; };
 		FBF30E6820C9247400FDA086 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E6720C9247400FDA086 /* AppDelegate.m */; };
 		FBF30E6B20C9247400FDA086 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF30E6A20C9247400FDA086 /* ViewController.m */; };
 		FBF30E6E20C9247400FDA086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF30E6C20C9247400FDA086 /* Main.storyboard */; };
@@ -52,6 +53,8 @@
 		145C4E5E500AE536E815E189 /* libPods-TestH264.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestH264.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DC15E3B2B2D1E2AA35BEA7 /* Pods-TestH264.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestH264.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestH264/Pods-TestH264.release.xcconfig"; sourceTree = "<group>"; };
 		BC4FB7E7C0EB8F567A4E4BDA /* Pods-TestH264.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestH264.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestH264/Pods-TestH264.debug.xcconfig"; sourceTree = "<group>"; };
+		FB7D855220EF65F000435BE1 /* CDPReplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPReplay.m; sourceTree = "<group>"; };
+		FB7D855320EF65F000435BE1 /* CDPReplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPReplay.h; sourceTree = "<group>"; };
 		FBF30E6320C9247400FDA086 /* TestH264.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestH264.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF30E6620C9247400FDA086 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBF30E6720C9247400FDA086 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +134,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB7D855120EF65F000435BE1 /* CDPReplay */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D855220EF65F000435BE1 /* CDPReplay.m */,
+				FB7D855320EF65F000435BE1 /* CDPReplay.h */,
+			);
+			path = CDPReplay;
+			sourceTree = "<group>";
+		};
 		FBF30E5A20C9247400FDA086 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +168,7 @@
 		FBF30E6520C9247400FDA086 /* TestH264 */ = {
 			isa = PBXGroup;
 			children = (
+				FB7D855120EF65F000435BE1 /* CDPReplay */,
 				FBF30EB420CA249A00FDA086 /* image */,
 				FBF30EAD20CA20E400FDA086 /* WLH264 */,
 				FBF30E6620C9247400FDA086 /* AppDelegate.h */,
@@ -422,6 +435,7 @@
 			files = (
 				FBF30E6B20C9247400FDA086 /* ViewController.m in Sources */,
 				FBF30EA820CA1CD300FDA086 /* testH264.mm in Sources */,
+				FB7D855420EF65F000435BE1 /* CDPReplay.m in Sources */,
 				FBF30E7620C9247400FDA086 /* main.m in Sources */,
 				FBF30ECB20CA4C0600FDA086 /* h264DataSource.m in Sources */,
 				FBF30E6820C9247400FDA086 /* AppDelegate.m in Sources */,
