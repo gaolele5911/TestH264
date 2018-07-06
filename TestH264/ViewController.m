@@ -15,7 +15,7 @@
 #import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
 #import "CDPReplay.h"
 
-@interface ViewController ()
+@interface ViewController ()<BMKMapViewDelegate>
 @property (nonatomic, strong) NSTimer *timer1;
 @property (weak, nonatomic) IBOutlet UIImageView *gitImage;
 @property (weak, nonatomic) IBOutlet UILabel *date;
@@ -141,6 +141,13 @@
     [_mapView viewWillDisappear];
     _mapView.delegate = nil; // 不用时，置nil
 }
+
+//baiduMap delegete
+- (void)mapView:(BMKMapView *)mapView onDrawMapFrame:(BMKMapStatus*)status {
+    
+//    [_mTestH264 setScreenMapView:mapview];
+}
+
 
 @end
 

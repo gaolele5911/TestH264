@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface testH264 : NSObject
 
@@ -14,5 +15,7 @@
 
 -(void)startRecord;
 -(void)stopReord;
+
+-(void)setScreenMapView:(UIView *)mapview;
 
 @end

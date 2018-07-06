@@ -77,4 +77,8 @@
     }
 }
 
+-(void)setScreenMapView:(UIView *)mapview {
+//    [_mWLScreenController setScreenMapView:mapview];
+}
+
 @end
