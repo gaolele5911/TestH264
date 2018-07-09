@@ -116,7 +116,7 @@
     if (_startRecordScreen.tag == 0) {
         
         [[CDPReplay sharedReplay] startRecord];
-        [_mTestH264 startRecord];
+//        [_mTestH264 startRecord];
         _startRecordScreen.tag =1;
         [_startRecordScreen setTitle:@"Stop Record Screen" forState:UIControlStateNormal];
         [_startRecordScreen sizeToFit];
@@ -124,7 +124,7 @@
     else {
         
         [[CDPReplay sharedReplay] stopRecordAndShowVideoPreviewController:YES];
-        [_mTestH264 stopReord];
+//        [_mTestH264 stopReord];
         _startRecordScreen.tag =0;
         [_startRecordScreen setTitle:@"Start Record Screen" forState:UIControlStateNormal];
         [_startRecordScreen sizeToFit];

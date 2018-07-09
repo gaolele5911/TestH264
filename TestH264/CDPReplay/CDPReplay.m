@@ -44,7 +44,8 @@
         if ([[RPScreenRecorder sharedRecorder] isAvailable]) {
             CDPLog(@"CDPReplay:录制开始初始化");
             
-            [[RPScreenRecorder sharedRecorder] startRecordingWithMicrophoneEnabled:YES handler:^(NSError *error){
+//            [[RPScreenRecorder sharedRecorder] startRecordingWithMicrophoneEnabled:YES handler:^(NSError *error){
+            [[RPScreenRecorder sharedRecorder] startRecordingWithHandler:^(NSError *error){
                 if (error) {
                     CDPLog(@"CDPReplay:开始录制error %@",error);
                     if ([_delegate respondsToSelector:@selector(replayRecordFinishWithVC:errorInfo:)]) {
